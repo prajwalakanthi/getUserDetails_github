@@ -1,0 +1,21 @@
+<div class="flex-header">
+    <h3>List Of Users</h3>
+    <h5>Click on user to redirect to github profiles</h5>
+    <h5>Click on '+' to get user details</h5>
+</div>
+<div class="container">    
+   <div class="flex-container">   
+   <div *ngFor = "let user of all_users">
+    <div class="flex-div-span">
+       <div><a href = "{{user.html_url}}" target="_blank"> {{user.login}} </a></div>      
+       <span  (click)="getUserDetails(user.login)">+</span>
+    </div>
+       <div class="flex-p" style="display: none;" id="{{user.login}}">
+        <p>Node Id : {{user.node_id}}</p>
+        <p>Type : {{user.type}}</p>
+        <p>Id : {{user.id}}</p>
+        <p>Site Admin : {{user.site_admin}}</p>
+    </div>   
+   </div>
+</div>
+</div>
