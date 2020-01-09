@@ -1,0 +1,50 @@
+.flex-header{
+    display:grid;
+      grid-template-columns: 3fr 1fr;    
+      padding: 10px;
+  }
+ 
+.flex-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    /* background-color:lightblue;  */
+    padding: 10px; 
+  }
+ 
+  .flex-div-span{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;    
+  }   
+
+  .card-header {
+    background-color: #fff;     
+    width:100%;
+    cursor:pointer;  
+    border:1px solid grey;
+    height: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    background-color:rgb(53, 62, 109);    
+  }  
+  .card-body {
+    background-color: #fff;     
+    width:100%;
+    cursor:pointer;  
+    border:1px solid grey;  
+    background-color: rgba(167, 218, 218, 0.856);       
+  }
+ 
+   
+  a{
+    text-decoration:none;
+    color: white;
+  }
+ 

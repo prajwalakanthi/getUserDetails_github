@@ -1,0 +1,23 @@
+<div class="flex-header">
+    <h3>Card View</h3>
+    <h5>Click on card header to redirect to github profiles</h5>
+</div>
+<div class="container">    
+   <div class="flex-container">   
+   <div *ngFor = "let user of all_users">
+    <div class="flex-div-span">
+        <div class="card-header">
+        <h4>
+            <a href = "{{user.html_url}}" target="_blank"> {{user.login}} </a>
+       </h4>       
+      </div>
+       <div class="card-body">              
+        <p>{{user.type}}</p>
+        <p>Id:{{user.id}}</p>
+        </div>         
+       <!-- <span  (click)="getUserDetails(user.login)">+</span> -->
+    </div>      
+   </div>
+</div>
+</div>
+

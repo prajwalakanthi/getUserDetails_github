@@ -1,5 +1,5 @@
 <div class="flex-header">
-    <h3>List Of Users</h3>
+    <h3>List View</h3>
     <h5>Click on user to redirect to github profiles</h5>
     <h5>Click on '+' to get user details</h5>
 </div>
@@ -10,7 +10,7 @@
        <div><a href = "{{user.html_url}}" target="_blank"> {{user.login}} </a></div>      
        <span  (click)="getUserDetails(user.login)">+</span>
     </div>
-       <div class="flex-p" style="display: none;margin-left: 20%;" id="{{user.login}}">
+       <div class="flex-p" style="display: none;margin-left: 30%;" id="{{user.login}}">
         <p>Node Id : {{user.node_id}}</p>
         <p>Type : {{user.type}}</p>
         <p>Id : {{user.id}}</p>
